@@ -6,7 +6,7 @@ with open(path.join(this_directory, 'README.md'), encoding = 'utf-8') as f:
 
 setup(
     name = 'tonrocketapisdk',
-    version = '1.0.1',
+    version = '1.0.3',
     packages = find_packages(),
     url = 'https://github.com/danya7423/tonRocket-api-sdk-py',
     license = 'MIT',

@@ -1,9 +1,11 @@
 from requests import get, post, delete
 
 class RocketApi():
-    def __init__(self, access_token):
+    def __init__(self, access_token, testnet = False):
         self.access_token = str(access_token)
         self.baseUrl = 'https://pay.ton-rocket.com'
+        if testnet == True:
+            self.baseUrl = 'https://dev-pay.ton-rocket.com'
         self.headers = {'Content-Type': 'application/json', 'Rocket-Pay-Key': self.access_token}
 
     def getVersion(self):

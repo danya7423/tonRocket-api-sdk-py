@@ -16,6 +16,14 @@ from tonrocketapisdk import *
 api = RocketApi('токен')
 ```
 
+Testnet:
+
+```python
+from tonrocketapisdk import *
+
+api = RocketApi('токен', True)
+```
+
 ## ⬇️ Навигация
 
 #### 🚀 [Методы](#🚀-методы)
