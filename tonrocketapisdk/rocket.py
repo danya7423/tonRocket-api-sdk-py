@@ -28,7 +28,7 @@ class RocketApi():
         response = post(f'{self.baseUrl}/app/transfer',
                         headers = self.headers,
                         json = {
-                            'tgUserId': data['id'],
+                            'tgUserId': data['tgUserId'],
                             'amount': data['amount'],
                             'currency': data['currency'],
                             'transferId': data['transferId'],
